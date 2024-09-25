@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <title>Direito Digital - FACCAT</title>
+</head>
+<body>
+
+    <header class="cabecario">
+        <div class="logo-container">
+            <img class="logo" src="logoFaccat.png" alt="Logo FACCAT">
+            <div class="text">
+                <b class="faccat">FACCAT</b>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="menu">
+            <a class="menu-item" href="index.html" onmouseover="changeIcon(this, 'homeBlack.png')" onmouseout="changeIcon(this, 'homeIcon.png')">
+                <img class="icon" src="homeIcon.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a class="menu-item" href="slide.html" onmouseover="changeIcon(this, 'folderBlack.png')" onmouseout="changeIcon(this, 'foldersIcon.png')">
+                <img class="icon" src="foldersIcon.png" alt="Slide">
+                <span>Slides</span>
+            </a>
+            <a class="menu-item" href="atividades.html" onmouseover="changeIcon(this, 'atividadeBlack.png')" onmouseout="changeIcon(this, 'atividadeIcon.png')">
+                <img class="icon" src="atividadeIcon.png" alt="Atividades">
+                <span>Atividades</span>
+            </a>
+            <a class="menu-item" href="apoio.html" onmouseover="changeIcon(this, 'livroBlack.png')" onmouseout="changeIcon(this, 'livro.png')">
+                <img class="icon" src="livro.png" alt="Apoio">
+                <span>Materiais de apoio</span>
+            </a>
+            <a class="menu-item" href="contato.html" onmouseover="changeIcon(this, 'contatoBlack.png')" onmouseout="changeIcon(this, 'contatoIcon.png')">
+                <img class="icon" src="contatoIcon.png" alt="Contato">
+                <span>Contato</span>
+            </a>
+
+            <script>
+                function changeIcon(element, newSrc) {
+                    const icon = element.querySelector('.icon');
+                    icon.src = newSrc;
+                }
+            </script>
+        </div>
+    </nav>
+
+    
+
+    <main class="content">
+
+        <h1>Direito Digital</h1>
+        
+        <img class="estetica" src="imagem6.jpg" alt="foto">
+
+        <section>
+            <h2>Objetivos Gerais</h2>
+            <p>A disciplina de Direito Digital tem como objetivos gerais capacitar os alunos a:</p>
+            <ul>
+                <li>Compreender os princípios e normas legais que regem a atuação no ambiente digital, promovendo uma atuação ética e responsável no uso das tecnologias da informação.</li>
+                <li>Analisar as implicações legais de sistemas de informação e tecnologias emergentes, assegurando a conformidade legal em projetos e práticas profissionais.</li>
+            </ul>
+            <p>Dessa forma, o aluno poderá contribuir para a criação de soluções tecnológicas que respeitem os direitos dos usuários e as normas vigentes, garantindo segurança e confiabilidade nas aplicações digitais.</p>
+        </section>
+
+        <section>
+            <h2>Objetivos Específicos</h2>
+            <p>Os objetivos específicos da disciplina incluem:</p>
+            <ul>
+                <li>Explorar as questões jurídicas relacionadas à proteção de dados, privacidade, propriedade intelectual e crimes cibernéticos, preparando os alunos para enfrentar desafios legais em suas carreiras.</li>
+                <li>Desenvolver habilidades para identificar e solucionar problemas legais que surgem no contexto do desenvolvimento e uso de sistemas de informação.</li>
+                <li>Promover a compreensão das políticas públicas e regulamentações pertinentes ao ambiente digital, permitindo que os alunos atuem de forma informada em contextos organizacionais e sociais.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>

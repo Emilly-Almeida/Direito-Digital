@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <title>Direito Digital - FACCAT</title>
+</head>
+<body>
+
+    <header class="cabecario">
+        <div class="logo-container">
+            <img class="logo" src="logoFaccat.png" alt="Logo FACCAT">
+            <div class="text">
+                <b class="faccat">FACCAT</b>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="menu">
+            <a class="menu-item" href="index.html" onmouseover="changeIcon(this, 'homeBlack.png')" onmouseout="changeIcon(this, 'homeIcon.png')">
+                <img class="icon" src="homeIcon.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a class="menu-item" href="slide.html" onmouseover="changeIcon(this, 'folderBlack.png')" onmouseout="changeIcon(this, 'foldersIcon.png')">
+                <img class="icon" src="foldersIcon.png" alt="Slide">
+                <span>Slides</span>
+            </a>
+            <a class="menu-item" href="atividades.html" onmouseover="changeIcon(this, 'atividadeBlack.png')" onmouseout="changeIcon(this, 'atividadeIcon.png')">
+                <img class="icon" src="atividadeIcon.png" alt="Atividades">
+                <span>Atividades</span>
+            </a>
+            <a class="menu-item" href="apoio.html" onmouseover="changeIcon(this, 'livroBlack.png')" onmouseout="changeIcon(this, 'livro.png')">
+                <img class="icon" src="livro.png" alt="Apoio">
+                <span>Materiais de apoio</span>
+            </a>
+            <a class="menu-item" href="contato.html" onmouseover="changeIcon(this, 'contatoBlack.png')" onmouseout="changeIcon(this, 'contatoIcon.png')">
+                <img class="icon" src="contatoIcon.png" alt="Contato">
+                <span>Contato</span>
+            </a>
+
+            <script>
+                function changeIcon(element, newSrc) {
+                    const icon = element.querySelector('.icon');
+                    icon.src = newSrc;
+                }
+            </script>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Atividades</h1>
+        
+        <section>
+            <h2>TED 2: Um breve estudo sobre algum tema estudado até a última aula</h2>
+            <a class="item-material" href="https://drive.google.com/file/d/1G8TMU4bv-WkGBpCKHeloovBXyufiQfi7/view" onmouseover="changeIcon(this, 'linkBlack.png')" onmouseout="changeIcon(this, 'link.png')">
+                <img class="icon" src="link.png" alt="link">
+                <span>ATIVIDADE</span>
+            </a>
+        </section>
+
+        <section>
+            <p>Data de entrega: 19 de set.</p>
+            <ul>
+                <li>Peso: um ponto extra no G1;</li>
+                <li>Em grupos de até cinco ou de forma individual, escolha um tema estudado até o momento, explicando sobre o que se trata;</li>
+                <li>Caso a atividade seja realizada em grupos, a entrega deverá ocorrer por apenas um integrante, com o nome completo dos demais.</li>
+            </ul>
+        </section>
+
+        <script>
+            function changeIcon(element, newSrc) {
+                const icon = element.querySelector('.icon');
+                icon.src = newSrc;
+            }
+        </script>
+    </main>
+
+</body>
+</html>

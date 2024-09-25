@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <title>Direito Digital - FACCAT</title>
+</head>
+<body>
+
+    <header class="cabecario">
+        <div class="logo-container">
+            <img class="logo" src="logoFaccat.png" alt="Logo FACCAT">
+            <div class="text">
+                <b class="faccat">FACCAT</b>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="menu">
+            <a class="menu-item" href="index.html" onmouseover="changeIcon(this, 'homeBlack.png')" onmouseout="changeIcon(this, 'homeIcon.png')">
+                <img class="icon" src="homeIcon.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a class="menu-item" href="slide.html" onmouseover="changeIcon(this, 'folderBlack.png')" onmouseout="changeIcon(this, 'foldersIcon.png')">
+                <img class="icon" src="foldersIcon.png" alt="Slide">
+                <span>Slides</span>
+            </a>
+            <a class="menu-item" href="atividades.html" onmouseover="changeIcon(this, 'atividadeBlack.png')" onmouseout="changeIcon(this, 'atividadeIcon.png')">
+                <img class="icon" src="atividadeIcon.png" alt="Atividades">
+                <span>Atividades</span>
+            </a>
+            <a class="menu-item" href="apoio.html" onmouseover="changeIcon(this, 'livroBlack.png')" onmouseout="changeIcon(this, 'livro.png')">
+                <img class="icon" src="livro.png" alt="Apoio">
+                <span>Materiais de apoio</span>
+            </a>
+            <a class="menu-item" href="contato.html" onmouseover="changeIcon(this, 'contatoBlack.png')" onmouseout="changeIcon(this, 'contatoIcon.png')">
+                <img class="icon" src="contatoIcon.png" alt="Contato">
+                <span>Contato</span>
+            </a>
+
+            <script>
+                function changeIcon(element, newSrc) {
+                    const icon = element.querySelector('.icon');
+                    icon.src = newSrc;
+                }
+            </script>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Prof. Felipe Cunha de Almeida</h1>
+        <img class="foto" src="prof.png" alt="Professor">
+        <section>
+            <h2>Contato:</h2>
+            <ul>
+                <li>E-mail: felipealmeida@faccat.br</li>
+                <li>Instagram: felipecunhadealmeida4</li>
+                <li>You Tube: Professor Felipe Cunha de Almeida</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>

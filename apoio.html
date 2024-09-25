@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <title>Direito Digital - FACCAT</title>
+</head>
+<body>
+
+    <header class="cabecario">
+        <div class="logo-container">
+            <img class="logo" src="logoFaccat.png" alt="Logo FACCAT">
+            <div class="text">
+                <b class="faccat">FACCAT</b>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-lateral">
+        <div class="menu">
+            <a class="menu-item" href="index.html" onmouseover="changeIcon(this, 'homeBlack.png')" onmouseout="changeIcon(this, 'homeIcon.png')">
+                <img class="icon" src="homeIcon.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a class="menu-item" href="slide.html" onmouseover="changeIcon(this, 'folderBlack.png')" onmouseout="changeIcon(this, 'foldersIcon.png')">
+                <img class="icon" src="foldersIcon.png" alt="Slide">
+                <span>Slides</span>
+            </a>
+            <a class="menu-item" href="atividades.html" onmouseover="changeIcon(this, 'atividadeBlack.png')" onmouseout="changeIcon(this, 'atividadeIcon.png')">
+                <img class="icon" src="atividadeIcon.png" alt="Atividades">
+                <span>Atividades</span>
+            </a>
+            <a class="menu-item" href="apoio.html" onmouseover="changeIcon(this, 'livroBlack.png')" onmouseout="changeIcon(this, 'livro.png')">
+                <img class="icon" src="livro.png" alt="Apoio">
+                <span>Materiais de apoio</span>
+            </a>
+            <a class="menu-item" href="contato.html" onmouseover="changeIcon(this, 'contatoBlack.png')" onmouseout="changeIcon(this, 'contatoIcon.png')">
+                <img class="icon" src="contatoIcon.png" alt="Contato">
+                <span>Contato</span>
+            </a>
+
+            <script>
+                function changeIcon(element, newSrc) {
+                    const icon = element.querySelector('.icon');
+                    icon.src = newSrc;
+                }
+            </script>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Materias de apoio</h1>
+
+        <section>
+            <h2>Bibliografia Básica</h2>
+            <ul>
+                <li>PINHEIRO, Patricia Peck. Direito Digital. Saraiva, 6. ed. 2017.</li>
+                <li>CHAVES, Silvia F. A Vulnerabilidade e a Hipossuficiência do Consumidor nas Contratações Eletrônicas. Manole, 2015.</li>
+                <li>PHILIPPI, Arlindo Jr.; PELICIONI, Maria C. F. Educação Ambiental e Sustentabilidade. 2. ed. rev. e atual. São Paulo: Manole, 2014.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Bibliografia Complementar</h2>
+            <ul>
+                <li>BARRETO, Ricardo de Macedo Menna. Direito e Redes Sociais na Internet. 2. ed. Jurua, 2014.</li>
+                <li>MALAQUINAS, Roberto Antônio Darós. Crime Cibernético e Prova. Jurua, 2015.</li>
+                <li>MARÇAL, José Antônio. Educação Escolar das Relações Étnico-Raciais: História e Cultura Afro-Brasileira e Indígena no Brasil. InterSaberes, 2015.</li>
+                <li>PAESANI, Liliana Minardi. Direito e Internet: Liberdade de Informação, Privacidade e Responsabilidade Civil. 3. ed. Atlas, 2006.</li>
+                <li>FRANCO, S. C. Cultura: Inclusão e Diversidade. São Paulo: Moderna, 2006.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
